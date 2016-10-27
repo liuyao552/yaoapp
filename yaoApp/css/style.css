@@ -1,0 +1,253 @@
+/*格式化样式*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {margin:0;padding:0;}
+table {border-collapse:collapse;border-spacing:0;}
+fieldset,img {border:0}
+address,caption,cite,code,dfn,em,strong,th,var {font-style:normal;font-weight:normal}
+ol,ul {list-style:none}
+caption,th {text-align:left}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal}
+q:before,q:after {content:''}
+abbr,acronym { border:0}
+a { text-decoration: none;}
+html {
+    font-size: 62.5%;
+    font-family: "-apple-system", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.clearfix:after {
+    content: "";
+    height: 0;
+    clear: both;
+    display: block;
+}
+/**************shadowbg***************/
+.shadowbg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    background: #000;
+    opacity: 0.8;
+}
+/******************slide***************/
+ion-slide{
+    height:15rem;
+    text-align:center;
+}
+ion-slide img{
+    height:15rem;
+}
+.item h2 {
+    white-space: normal;
+    line-height: 200%;
+}
+/************news_subheader_nav*************/
+.scroll_nav{
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+}
+.list_subheader{
+    height: 44px;
+    line-height: 44px;
+    width: 200%;
+}   /*100*/
+
+.list_subheader li{
+    width: 12.5%;   /*  100/8  */
+    height: 44px;
+    line-height: 3.8rem;
+    float: left;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+.list_subheader li a{
+    display: inline-block;
+    color: #000;
+}
+.list_subheader li.active{
+    border-bottom: 2px solid #ff6052;
+}
+/********************fontsize**********************/
+.fontSuper {
+    font-size: 2.5rem;
+    line-height: 150%;
+}
+.fontBig {
+    font-size: 2rem;
+    line-height: 150%;
+}
+.fontMiddle {
+    font-size: 1.6rem;
+    line-height: 150%;
+}
+.fontLittle {
+    font-size: 1.2rem;
+    line-height: 150%;
+}
+/**************newscontent**************/
+.content{
+    line-height: 180%;
+}
+
+.content img{
+    max-width: 90%;
+    display: block;
+    margin:0 auto;
+}
+/******************account*************/
+.icoperson {
+    text-align: center;
+    font-size: 5rem;
+    color: #fff;
+    padding: 2rem 0;
+}
+.icoperson img {
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 50%;
+}
+.icoperson i {
+    display: inline-block;
+    width: 4.8rem;
+    height: 4.8rem;
+    background: #c6c6c6;
+    border-radius: 50%;
+}
+.logreg {
+    font-size: 0;
+    text-align: center;
+    color: #484848;
+    padding-bottom: 1.5rem;
+}
+.logreg span {
+    font-size: 1.4rem;
+    margin:0 1rem;
+}
+.item-divider {
+    padding: 8px;
+    min-height: 0;
+}
+.my i {
+    font-size: 2.8rem;
+}
+.my span {
+    position: relative;
+    top: -4px;
+}
+/*************login*************/
+.forget {
+    padding-top: 3rem;
+    font-size:0px;
+}
+.forget a {
+    text-decoration: underline;
+    width:50%;
+    text-align: right;
+    display: inline-block;
+    font-size: 1.4rem;
+    padding-right: 1.4rem;
+    box-sizing: border-box;
+}
+.forget span {
+    width: 50%;
+    text-align: left;
+    display: inline-block;
+    font-size: 1.4rem;
+    padding-left: 1.4rem;
+    box-sizing: border-box;
+}
+.width80 {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+/************newslist*************/
+.nav-list{
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+}
+
+.nav-list li{
+    width: 25%;
+    height: 44px;
+    line-height: 44px;
+    float: left;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+}
+.nav-list li.select{
+    border-bottom: 2px solid #f60;
+}
+/*****************error**************/
+.error {
+    color: #f00;
+}
+/********************messages****************/
+.messages {
+    padding: 0 1rem;
+}
+.messages h3 {
+    color: #1c47c2;
+    font-size: 2rem;
+    line-height: 5rem;
+}
+.messages p {
+    font-size: 1.2rem;
+    color: #7a7a7a;
+    line-height: 2rem;
+}
+.send {
+    font-size: 0;
+    padding-top: 3rem;
+}
+.send input {
+    width: 50%;
+    border: 1px solid #cccccc;
+    border-radius: 5px 0 0 5px;
+    border-right: 0;
+    font-size: 1.4rem;
+    height: 4.2rem;
+    line-height: 4.2rem;
+    display: inline-block;
+    box-sizing: border-box;
+    float: left;
+    text-indent: 1.4rem;
+}
+.send button {
+    display: inline-block;
+    width: 50%;
+    font-size: 1.4rem;
+    background: #35cb5f;
+    color: #fff;
+    min-height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    float: left;
+    border-radius: 0;
+}
+.martop6 {
+    margin-top: 6rem;
+}
+.button-small {
+    min-height: 3.5rem;
+    font-size: 1.4rem;
+}
+/**************mycollect*************/
+.myoption.tabs .tab-item .icon {
+    font-size: 2.6rem;
+}
+.myoption.tabs .tab-item {
+    font-size: 1.4rem;
+}
+.wid100 {
+    width: 100%;
+}

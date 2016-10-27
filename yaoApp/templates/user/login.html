@@ -1,0 +1,27 @@
+<ion-modal-view>
+    <ion-header-bar class="bar-positive">
+        <button class="button button-clear icon ion-ios-arrow-back" ng-click="close()"></button>
+        <h2 class="title">登录</h2>
+        <button class="button button-clear" ng-click="registerShow()">注册</button>
+    </ion-header-bar>
+    <ion-content>
+        <form class="list list-inset" name="myForm" novalidate="novalidate">
+            <p class="error" ng-if="erroruser">用户不存在或密码不正确</p>
+            <label class="item item-input" name="phoneNumber">
+                <span class="input-label">手机号:</span>
+                <input type="number" name="phoneNumber" ng-model="res.phoneNumber" placeholder="手机号" ng-change="isPhonenumber(res.phoneNumber)" />
+            </label>
+            <p class="error" ng-if="res.errorPhone">非法手机号</p>
+            <label class="item item-input" name="password">
+                <span class="input-label">密　码:</span>
+                <input type="password" name="password" ng-model="res.password" placeholder="密码" />
+            </label>
+        </form>
+        <div class="button button-positive button-small width80" ng-click="login()" >登录</div>
+
+        <div class="forget">
+            <a href="javascript:;">忘记密码？</a>
+            <span ng-click="registerShow()">注册</span>
+        </div>
+    </ion-content>
+</ion-modal-view>

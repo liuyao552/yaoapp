@@ -1,0 +1,19 @@
+<ion-view title="首页">
+    <ion-content>
+        <ion-slide-box does-continue="true" auto-play="true" slide-interval="2000" show-pager="true">
+            <ion-slide ng-repeat="item in img_list">
+                <img class="wid100" src='{{item}}'  alt=""/>
+            </ion-slide>
+        </ion-slide-box>
+       <ion-list>
+           <ion-item ng-repeat="item in items" class="item-thumbnail-left" href="#/news_content/{{item.aid}}">
+               <img ng-src='{{item.pic | jpg}}' onerror="javascript:this.src='img/loading.gif';"  alt="pic" />
+               <h2 class="wrap">{{item.title}}</h2>
+           </ion-item>
+       </ion-list>
+        <ion-infinite-scroll
+                icon="ion-loading-c"
+                on-infinite="loadMore()" ng-if="hasData">
+        </ion-infinite-scroll>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,62 @@
+<ion-view title="健康资讯">
+    <!--<ion-header-bar class="bar-subheader bar-light">-->
+        <!--<ion-scroll class="scroll_nav" scrollbar-x="false" scrollbar-y="false" direction="x">-->
+            <!--<ul class="list_subheader">-->
+                <!--<li ng-class="{'active':isActive}" ng-click="active()"><a href="javascript:;">健康资讯</a></li>-->
+                <!--<li toggle-class="active"><a href="javascript:;">保健咨询</a></li>-->
+                <!--<li><a href="javascript:;">饮食保健</a></li>-->
+                <!--<li><a href="javascript:;">小验方</a></li>-->
+                <!--<li><a href="javascript:;">健康资讯</a></li>-->
+                <!--<li><a href="javascript:;">保健咨询</a></li>-->
+                <!--<li><a href="javascript:;">饮食保健</a></li>-->
+                <!--<li><a href="javascript:;">小验方</a></li>-->
+            <!--</ul>-->
+
+        <!--</ion-scroll>-->
+
+    <!--</ion-header-bar>-->
+  <!--  <ion-header-bar class="bar-subheader" style="padding:0px;">
+        <ul class="nav-list" id="nav-list">
+            <li ng-repeat="cate in cates" ng-click="getCateData($index,cate.catid)" ng-class="{'select':$index==0}">
+                {{cate.title}}
+            </li>
+
+        </ul>
+
+    </ion-header-bar>-->
+   <!-- <div class="tabs-striped tabs-top tabs-background-positive tabs-color-light">
+        <ion-tabs>
+            <a class="tab-item" ng-repeat="cate in cates" ng-click="getCateData($index,cate.catid)">
+                {{cate.title}}
+            </a>
+        </ion-tabs>
+    </div>-->
+
+
+    <div>
+        <ion-tabs class="tabs-color-active-positive tabs-top tabs-striped">
+            <ion-tab title="健康资讯"  href="#/tab/news" >
+            </ion-tab>
+            <ion-tab title="保健资讯" href="#/tab/care" >
+            </ion-tab>
+            <ion-tab title="饮食保健" href="#/tab/diet" >
+            </ion-tab>
+            <ion-tab title="小验方" href="#/tab/prescription" >
+            </ion-tab>
+        </ion-tabs>
+    </div>
+
+
+    <ion-content class="has-tabs-top">
+        <ion-list>
+            <ion-item ng-repeat="item in items" class="item-thumbnail-left" href="#/news_content/{{item.aid}}" ng-class="{'item-borderless':$index==0}">
+                <img ng-src='{{item.pic | jpg}}' onerror="javascript:this.src='img/loading.gif';"  alt="pic" />
+                <h2 class="wrap">{{item.title}}</h2>
+            </ion-item>
+        </ion-list>
+        <ion-infinite-scroll
+                icon="ion-loading-c"
+                on-infinite="loadMore()" ng-if="hasData">
+        </ion-infinite-scroll>
+    <ion-content>
+</ion-view>

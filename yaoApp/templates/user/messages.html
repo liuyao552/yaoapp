@@ -1,0 +1,15 @@
+<ion-modal-view>
+    <ion-header-bar class="bar-positive">
+        <button class="button button-clear icon ion-ios-arrow-back" ng-click="close()"></button>
+        <h2 class="title">手机验证码</h2>
+    </ion-header-bar>
+    <ion-content class="messages">
+        <h3>马上验证手机，激活你的账户</h3>
+        <p>验证码已通过短信方式发送至{{res.phoneNumber}}　请输入验证码完成验证，手机绑定是为了验证用户的真实性和账号安全</p>
+        <div class="send clearfix">
+            <input type="text" placeholder="　请输入验证码" />
+            <button class="button  button-balanced" ng-click="sendMessage()" ng-disabled="sendable">{{send.prompt}}{{send.time}}</button>
+        </div>
+        <button class="button button-positive width80 martop6 button-small" ng-click="register()">确定</button>
+    </ion-content>
+</ion-modal-view>

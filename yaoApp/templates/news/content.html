@@ -1,0 +1,17 @@
+<ion-view title="文章详情">
+    <ion-nav-buttons side="left">
+        <a class="button button-clear icon ion-ios-arrow-left" ng-click="$ionicGoBack()"></a>
+    </ion-nav-buttons>
+
+    <ion-content padding="true" class="scroll-content ionic-scroll  has-header has-tabs {{font.size}}">
+        <div class="title">
+            {{item.title}}
+        </div>
+        <div class="content" ng-bind-html="item.content">
+        </div>
+    </ion-content>
+    <ion-footer-bar class="bar-light">
+        <button class="button button-clear icon ion-social-tumblr-outline" ng-click="changFont()">字号</button>
+        <button class="button button-clear icon" ng-class="{'ion-ios-star-outline':!isCollect,'ion-android-star':isCollect}" ng-click="collect()">收藏</button>
+    </ion-footer-bar>
+</ion-view>

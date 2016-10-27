@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ionic">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+    <title></title>
+    <link rel="stylesheet" href="lib/ionic/css/ionic.min.css"/>
+    <script src="lib/ionic/js/ionic.bundle.min.js"></script>
+</head>
+<body>
+<!--<ion-nav-view animation="slide-left-right">
+<ion-tabs class="tabs-dark tabs-color-active-positive tabs-icon-top">
+
+    <ion-tab title="首页" icon-on="ion-ios7-filing" icon-off="ion-ios7-filing-outline">
+        &lt;!&ndash; 标签 1 内容 &ndash;&gt;
+    </ion-tab>
+
+    <ion-tab title="关于" icon-on="ion-ios7-clock" icon-off="ion-ios7-clock-outline">
+        &lt;!&ndash; 标签 2 内容 &ndash;&gt;
+    </ion-tab>
+
+    <ion-tab title="设置" icon-on="ion-ios7-gear" icon-off="ion-ios7-gear-outline">
+        &lt;!&ndash; 标签 3 内容 &ndash;&gt;
+    </ion-tab>
+</ion-tabs>
+</ion-nav-view>-->
+<ion-tabs class=" tabs-color-active-positive">
+    <ion-tab title="首页"  href="#/tab/home">
+        <ion-nav-view name="tab-home"></ion-nav-view>
+    </ion-tab>
+    <ion-tab title="健康分析" href="#/tab/analyze">
+        <ion-nav-view name="tab-analyze"></ion-nav-view>
+    </ion-tab>
+    <ion-tab title="发现"  href="#/tab/news">
+        <ion-nav-view name="tab-news"></ion-nav-view>
+    </ion-tab>
+    <ion-tab title="个人中心" href="#/tab/account">
+        <ion-nav-view name="tab-account"></ion-nav-view>
+    </ion-tab>
+</ion-tabs>
+<script>
+    var temp = [];
+    temp["name"]="liuyao";
+    temp["age"]="zhangsan";
+    temp[20]="lisi";
+    console.log(temp);
+    console.log(temp.length);
+    console.log(temp[1])
+    console.log(temp["name"])
+</script>
+</body>
+</html>
